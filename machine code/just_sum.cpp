@@ -12,15 +12,15 @@
 
  MRM format:
 
-                                            |       m1  m2     rg  rg  rg     rm  rm  rm
+                                                    |       m1  m2     rg  rg  rg     rm  rm  rm
 	89 f8             	mov    %rdi, %rax   |  f8:  1   1      1   1   1      0   0   0
 	89 f7             	mov    %rsi, %rdi   |  f7:  1   1      1   1   0      1   1   1
 	89 fa             	mov    %rdi, %rdx   |  fa:  1   1      1   1   1      0   1   0
 	89 d1             	mov    %rdx, %rcx   |  d1:  1   1      0   1   0      0   0   1
 	89 ce             	mov    %rcx, %rsi   |  ce:  1   1      0   0   1      1   1   0
 	01 f0             	add    %rsi, %rax   |  f0:  1   1      1   1   0      0   0   0
-	c3                  ret                 |
-                                            |
+	c3                      ret                 |
+                                                    |
 
              000 - rax
              001 - rcx
