@@ -16,10 +16,11 @@ sum1:
 sum2:
     lea (%rsi, %rdi), %rax
     ret
+
 )");
 
 int main() {
     long long a, b;
     std::cin >> a >> b;
-    std::cout << sum1(a, b) << " " <<sum2(a, b) << std::endl;
+    std::cout << sum1(a, b) << " " << sum2(a, b) << std::endl;
 }
